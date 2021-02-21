@@ -38,8 +38,8 @@ function startTimer() {
     } else {
         console.log("timer started!");
 
-        min = 0;
-        sec = 5;
+        min = 24;
+        sec = 59;
 
         document.getElementById("minutes").innerHTML = min;
         document.getElementById("seconds").innerHTML = sec;

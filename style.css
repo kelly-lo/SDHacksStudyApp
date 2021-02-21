@@ -28,24 +28,6 @@ body {
     text-align: center;
 }
 
-
-/* 
-.col-2 h4{
-    font-size: 50px;
-    font-family:'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-}
-
-.col-3 h4 {
-    font-size: 50px;
-    font-family:'Courier New', Courier, monospace;
-    margin: 0;
-    padding: 0;
-    text-align: center;
-} */
-
 .timer {
     color: white;
     width: 40rem;
@@ -73,22 +55,16 @@ body {
 }
 
 .playButton, .redoButton{
-    /* color: white;
-    border: 2px solid transparent;
-    padding: 1rem;
-    border-radius: 2rem; */
     font-family: "Permanent Marker";
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
     border: 1px solid rgb(255, 255, 255);
     display: block;
     color: brown;
-    /* font-family: Arial; */
     font-size: 25px;
     padding: 16px 31px;
     text-decoration: none;
     text-align: center;
-    /* text-shadow: rgb(255 0 0) 0px 1px 0px; */
 }
 
 .buttons {
