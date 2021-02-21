@@ -54,25 +54,26 @@ body {
     height: 100px;
 }
 
-.playButton, .redoButton{
+.playButton, .redoButton, .muteButton {
     font-family: "Permanent Marker";
     background-color: rgb(255, 255, 255);
     border-radius: 30px;
     border: 1px solid rgb(255, 255, 255);
     display: block;
-    color: brown;
+    color:brown;
     font-size: 25px;
     padding: 16px 31px;
     text-decoration: none;
     text-align: center;
+    width: 210px;
 }
 
 .buttons {
-    justify-content: space-between;
+    justify-content: space-evenly;
     display: flex;
 }
 
-.playButton:hover, .redoButton:hover {
+.playButton:hover, .redoButton:hover, .muteButton:hover {
     color: darkslategray;
     background-color:darkseagreen;
     border: 1px solid darkseagreen;
@@ -88,4 +89,20 @@ body {
     background: darkseagreen;
     border-radius: 0.5rem;
     transition: 0.5s ease;
-  }
+}
+
+.musicsrc, .creators {
+    font: "Poppins";
+    font-size: 16px;
+    color: white;
+    text-align: center;
+}
+
+a {
+    color: darkseagreen;
+}
+
+a:hover {
+    color: darkseagreen;
+    font-weight: bold;
+}

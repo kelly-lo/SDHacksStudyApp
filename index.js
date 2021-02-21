@@ -2,12 +2,15 @@ var sec = "00";
 var min = "25";
 
 var getout = new Audio("getout.mp3");
+var chillmusic = new Audio("chillmusic.mp3");
 var clockrunning = false;
 
 function initTimer() {
     console.log("timer initialized");
     document.getElementById("minutes").innerHTML = min;
     document.getElementById("seconds").innerHTML = sec;
+
+    document.getElementById("muteButton").style.display = "none";
 }
 
 function resetTimer() {
@@ -26,8 +29,26 @@ function resetTimer() {
     document.getElementById("complete").innerHTML = "";
     document.getElementById("complete").classList.remove("display_finish");
 
+    document.getElementById("muteButton").style.display = "none";
+
+    chillmusic.pause();
+    chillmusic.currentTime = 0;
+    chillmusic.muted = false;
+
     getout.pause();
     getout.currentTime = 0;
+}
+
+function muteAudio() {
+    if (chillmusic.muted == true) {
+        chillmusic.muted = false;
+        document.getElementById("muteButton").innerHTML = "Mute";
+
+    } else {
+        chillmusic.muted = true;
+        document.getElementById("muteButton").innerHTML = "Unmute";
+    }
+
 }
 
 function startTimer() {
@@ -37,6 +58,9 @@ function startTimer() {
         console.log("clock is running");
     } else {
         console.log("timer started!");
+        chillmusic.play();
+        document.getElementById("muteButton").style.display = "block";
+        document.getElementById("muteButton").innerHTML = "Mute";
 
         min = 24;
         sec = 59;
@@ -70,6 +94,9 @@ function startTimer() {
                     clearInterval(sInterval);
 
                     clockrunning = false;
+                    chillmusic.pause();
+                    chillmusic.currentTime = 0;
+
                     document.getElementById("complete").innerHTML = "Good work! Take a nice break :)";
 
                     document.getElementById("complete").classList.add("display_finish");
