@@ -1,0 +1,115 @@
+@font-face{
+    font-family: "Permanent Marker";
+    src: "https://fonts.googleapis.com/css2?family=Permanent Marker&display=swap"
+}
+
+@font-face{
+    font-family: "Poppins";
+    src: "https://fonts.googleapis.com/css2?family=Poppins&display=swap"
+}
+
+body {
+    background-color: brown;
+    font-size: 50px;
+}
+
+.header {
+    font-family: "Permanent Marker";
+    color: white;
+    text-align: center;
+    font-size: 60px;
+}
+
+.row > .col h4 {
+    font-size: 80px;
+    font-family: "Poppins";
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+
+/* 
+.col-2 h4{
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+}
+
+.col-3 h4 {
+    font-size: 50px;
+    font-family:'Courier New', Courier, monospace;
+    margin: 0;
+    padding: 0;
+    text-align: center;
+} */
+
+.timer {
+    color: white;
+    width: 40rem;
+    height: 40rem;
+    border: 5px solid #fff;
+    border-radius: 20rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+#complete {
+    text-align: center;
+}
+
+.row {
+    width: 100%;
+    color: white;
+    display: grid;
+    align-content: space-evenly;
+    grid-template-columns: auto auto auto;
+    margin: 0;
+    padding: 0;
+    height: 100px;
+}
+
+.playButton, .redoButton{
+    /* color: white;
+    border: 2px solid transparent;
+    padding: 1rem;
+    border-radius: 2rem; */
+    font-family: "Permanent Marker";
+    background-color: rgb(255, 255, 255);
+    border-radius: 30px;
+    border: 1px solid rgb(255, 255, 255);
+    display: block;
+    color: brown;
+    /* font-family: Arial; */
+    font-size: 25px;
+    padding: 16px 31px;
+    text-decoration: none;
+    text-align: center;
+    /* text-shadow: rgb(255 0 0) 0px 1px 0px; */
+}
+
+.buttons {
+    justify-content: space-between;
+    display: flex;
+}
+
+.playButton:hover, .redoButton:hover {
+    color: darkslategray;
+    background-color:darkseagreen;
+    border: 1px solid darkseagreen;
+    transition: 0.3s ease;
+}
+
+.display_finish {
+    padding-top: 5px;
+    font: "Poppins";
+    display: block;
+    padding: 1rem 0;
+    color: darkslategray;
+    background: darkseagreen;
+    border-radius: 0.5rem;
+    transition: 0.5s ease;
+  }
