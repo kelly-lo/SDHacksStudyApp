@@ -30,6 +30,7 @@ function resetTimer() {
     document.getElementById("complete").classList.remove("display_finish");
 
     document.getElementById("muteButton").style.display = "none";
+    document.getElementById("startButton").style.display = "block";
 
     chillmusic.pause();
     chillmusic.currentTime = 0;
@@ -59,6 +60,9 @@ function startTimer() {
     } else {
         console.log("timer started!");
         chillmusic.play();
+
+        document.getElementById("startButton").style.display = "none";
+
         document.getElementById("muteButton").style.display = "block";
         document.getElementById("muteButton").innerHTML = "Mute";
 
